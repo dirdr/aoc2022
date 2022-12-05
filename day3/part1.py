@@ -1,9 +1,8 @@
 def solve() -> int:
     with open('input.txt', 'r') as file:
-        lines: list = file.readlines()
+        lines: list = [line.strip() for line in file.readlines()]
         result: int = 0
         for line in lines:
-            line: str = line.strip()
             left, right = [get_value(letter) for letter in line[:len(line)//2]], [get_value(letter) for letter in line[len(line)//2:]]
             result += sum(list(set(left) & set(right)))
         return result

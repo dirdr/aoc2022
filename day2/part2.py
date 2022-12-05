@@ -26,7 +26,7 @@ def get_move(other_play: str, needed_outcome: str) -> str:
         if other_play == 'C': return 'A'
     return 'error'
 
-def main():
+def main() -> None:
     print(solve())
 
 if __name__ == '__main__':

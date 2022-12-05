@@ -11,7 +11,7 @@ def solve() -> int:
                 total_kcal = 0
         return max(result)
         
-def main():
+def main() -> None:
     print(solve())
 
 if __name__ == '__main__':

@@ -28,7 +28,7 @@ def get_outcome(a: str, b: str) -> int:
         if b == 'Z': return 3
     return -1
 
-def main():
+def main() -> None:
     print(solve())
 
 if __name__ == '__main__':

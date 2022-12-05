@@ -1,11 +1,14 @@
 
 def solve() -> int:
     with open('input.txt', 'r') as file:
-        lines: list = [line for line in file][:3]
-        print(lines)
+        _lines: list = [line.strip() for line in file.readlines()]
+        lines: list = list(_lines[i: i+3] for i in range(0, len(_lines), 3)) 
         result: int = 0
+        for first, second, third in lines:
+            badge = (set(first) & set(second) & set(third)).pop()
+            result += get_value(badge)
+    return result
 
-    return -1
 def get_value(letter: str) -> int:
     off: int = 96 if letter.islower() else 38
     return ord(letter) - off

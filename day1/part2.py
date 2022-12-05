@@ -14,7 +14,7 @@ def solve() -> int:
         result.reverse()
         return result[0] + result[1] + result[2]
         
-def main():
+def main() -> None:
     print(solve())
 
 if __name__ == '__main__':
