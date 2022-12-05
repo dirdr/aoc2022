@@ -1,4 +1,3 @@
-
 def solve() -> int:
     with open('input.txt', 'r') as file:
         _lines: list = [line.strip() for line in file.readlines()]
