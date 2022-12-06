@@ -1,4 +1,4 @@
-def solve():
+def solve() -> int:
     with open('input.txt', 'r') as file:
         lines: list = [line.strip() for line in file.readlines()]
         result: int = 0
