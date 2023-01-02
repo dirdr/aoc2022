@@ -1,4 +1,3 @@
-
 def solve() -> int:
     result: list = []
     with open('input.txt', 'r') as file:
@@ -13,9 +12,11 @@ def solve() -> int:
         result.sort()
         result.reverse()
         return result[0] + result[1] + result[2]
-        
+
+
 def main() -> None:
     print(solve())
+
 
 if __name__ == '__main__':
     main()

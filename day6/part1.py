@@ -13,13 +13,15 @@ def solve() -> int:
             else:
                 cons += 1
                 if cons == 4:
-                    return count;
+                    return count
                 seen.add(char)
             count += 1
     return -1
 
+
 def main() -> None:
     print(solve())
+
 
 if __name__ == '__main__':
     main()

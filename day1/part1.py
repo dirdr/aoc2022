@@ -10,9 +10,11 @@ def solve() -> int:
                 result.append(total_kcal)
                 total_kcal = 0
         return max(result)
-        
+
+
 def main() -> None:
     print(solve())
+
 
 if __name__ == '__main__':
     main()
